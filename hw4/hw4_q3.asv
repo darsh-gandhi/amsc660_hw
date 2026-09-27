@@ -1,0 +1,22 @@
+% dg 9/27/26; 16:41
+
+clear; close all;
+
+%%
+
+MNIST_data = load ('mnist_matlab.mat ');
+MNIST_data.imgs_train;  % 20 x20x60000 training images
+MNIST_data.labels_train;% 60000 x1 training image labels
+MNIST_data.imgs_test;   % 20 x20x10000 test images
+MNIST_data.labels_test; % 10000 x1 test image labels
+
+%%
+
+[x,y,z] = size(MNIST_data.imgs_test);
+
+flat_data = -1.0*ones(400,1e4);
+for i=1:z
+
+
+
+MNIST_data.imgs_test(:,:,1)
